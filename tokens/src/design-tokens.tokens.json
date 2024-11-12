@@ -20,5 +20,41 @@
       "value": "#3cf793ff",
       "blendMode": "normal"
     }
+  },
+  "spacing": {
+    "md": {
+      "type": "dimension",
+      "value": 8
+    },
+    "lg": {
+      "type": "dimension",
+      "value": 16
+    },
+    "xl": {
+      "type": "dimension",
+      "value": 32
+    },
+    "sm": {
+      "type": "dimension",
+      "value": 4
+    },
+    "xs": {
+      "type": "dimension",
+      "value": 2
+    }
+  },
+  "radius": {
+    "md": {
+      "type": "dimension",
+      "value": 8
+    },
+    "sm": {
+      "type": "dimension",
+      "value": 4
+    },
+    "lg": {
+      "type": "dimension",
+      "value": 16
+    }
   }
 }

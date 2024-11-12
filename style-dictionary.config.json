@@ -2,17 +2,17 @@
   "source": ["tokens/**/*.json"],
   "platforms": {
     "css": {
-      "transformGroup": "css",
+      "transforms": ["attribute/cti", "size/px", "name/kebab", "color/css"],
       "buildPath": "build/",
       "files": [
         {
-          "destination": "vars.css",
+          "destination": "tokens.css",
           "format": "css/variables"
         }
       ]
     },
     "js": {
-      "transformGroup": "js",
+      "transforms": ["attribute/cti","name/pascal", "color/hex"],
       "buildPath": "build/",
       "files": [{
         "destination": "tokens.js",
