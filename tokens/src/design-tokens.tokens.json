@@ -1,0 +1,24 @@
+{
+  "color": {
+    "blue": {
+      "type": "color",
+      "value": "#00fffbff",
+      "blendMode": "normal"
+    },
+    "red": {
+      "type": "color",
+      "value": "#ff1e70ff",
+      "blendMode": "normal"
+    },
+    "yellow": {
+      "type": "color",
+      "value": "#ffff00ff",
+      "blendMode": "normal"
+    },
+    "green": {
+      "type": "color",
+      "value": "#3cf793ff",
+      "blendMode": "normal"
+    }
+  }
+}

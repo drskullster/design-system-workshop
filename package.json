@@ -1,0 +1,13 @@
+{
+  "name": "design-system-workshop",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "marp": "marp presentation/index.md -w --html --allow-local-files ",
+    "style-dictionary": "style-dictionary build -c style-dictionary.config.json"
+  },
+  "devDependencies": {
+    "@marp-team/marp-cli": "^3.4.0",
+    "style-dictionary": "^4.1.4"
+  }
+}
