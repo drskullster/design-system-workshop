@@ -1,0 +1,12 @@
+{
+  "typography": {
+    "heading": {
+      "h1": {
+        "shorthand": {
+          "type": "string",
+          "value": "{typography.heading.h1.fontWeight} {typography.heading.h1.fontSize}/{typography.heading.h1.lineHeight} {typography.fontfamily}"
+        }
+      }
+    }
+  }
+}

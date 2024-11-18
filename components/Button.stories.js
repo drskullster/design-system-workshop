@@ -5,30 +5,29 @@ import { html } from 'https://cdn.jsdelivr.net/gh/lit/dist@3/core/lit-core.min.j
 export default {
     title: 'Components/Button',
     tags: ['autodocs'],
-    render: ({ primary, large, label }) => html`<my-button primary="${primary ? primary : ''}" large="${large ? large : ''}">${label}</my-button>`,
+    render: ({ outlined, large, label }) => html`<my-button outlined="${outlined ? outlined : ''}" large="${large ? large : ''}">${label}</my-button>`,
 };
 
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
-export const Primary = {
+export const Default = {
     args: {
-        primary: true,
         large: false,
-        label: 'Button',
+        label: 'Trouvez votre abonnement GSM',
     },
 };
 
-export const Secondary = {
+export const Outlined = {
     args: {
-        label: 'Button',
-        primary: false,
+        label: 'En savoir plus',
+        outlined: true,
         large: false,
     },
 };
 
 export const Large = {
     args: {
-        large: false,
-        primary: false,
-        label: 'Button',
+        large: true,
+        outlined: false,
+        label: 'Calculez votre prix',
     },
 };

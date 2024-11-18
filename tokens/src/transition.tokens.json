@@ -1,0 +1,8 @@
+{
+  "transition": {
+    "md": {
+      "type": "string",
+      "value": "all .15s cubic-bezier(.4,0,.2,1)"
+    }
+  }
+}
