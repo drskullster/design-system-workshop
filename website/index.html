@@ -1,19 +1,39 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <script type="module" src="../components/Button.js"></script>
   <link rel="stylesheet" href="../build/tokens.css">
+  <link href="../components/button.css" rel="stylesheet">
+  
   <meta charset="UTF-8">
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Example Website</title>
+  <script type="module">
+  import { Button } from '../components/Button.js';
+  import { render } from 'https://cdn.jsdelivr.net/gh/lit/dist@3/core/lit-core.min.js';
+
+  const button = Button({ label: 'Bouton ajouté dynamiquement', large: true, icon: 'fa-phone' });
+
+  render(button, document.querySelector('#dynamic-button'));
+  </script>
+  <style>
+  .static-buttons {
+      display: flex;
+      gap: var(--spacing-2);
+  }
+  </style>
 </head>
 <body>
-<p>
-  <my-button>Trouvez votre abonnement GSM</my-button>
-  <my-button outlined="outlined">En savoir plus</my-button>
+<p class="static-buttons">
+  <button class="ds-button">
+    Trouvez votre abonnement GSM
+  </button>
+  <button class="ds-button is-outlined">
+    En savoir plus
+  </button>
 </p>
-<my-button large="large">Calculez votre prix</my-button>
+<p id="dynamic-button"></p>
+<script crossorigin="anonymous" src="https://kit.fontawesome.com/f82ceaa359.js"></script>
 </body>
 </html>

@@ -1,33 +1,42 @@
-import './Button';
-import { html } from 'https://cdn.jsdelivr.net/gh/lit/dist@3/core/lit-core.min.js';
+import { Button } from './Button';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories
 export default {
     title: 'Components/Button',
     tags: ['autodocs'],
-    render: ({ outlined, large, label }) => html`<my-button outlined="${outlined ? outlined : ''}" large="${large ? large : ''}">${label}</my-button>`,
+    render: (args) => Button(args),
 };
 
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
 export const Default = {
     args: {
+        icon: '',
         large: false,
+        outlined: false,
         label: 'Trouvez votre abonnement GSM',
     },
 };
 
 export const Outlined = {
     args: {
+        ...Default.args,
         label: 'En savoir plus',
         outlined: true,
-        large: false,
     },
 };
 
 export const Large = {
     args: {
+        ...Default.args,
         large: true,
-        outlined: false,
         label: 'Calculez votre prix',
+    },
+};
+
+export const WithIcon = {
+    args: {
+        ...Default.args,
+        label: 'Rappelez-moi',
+        icon: 'fa-phone',
     },
 };
