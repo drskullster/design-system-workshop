@@ -1,5 +1,5 @@
 {
-  "name": "@mega-ds/design-tokens",
+  "name": "@ds/design-tokens",
   "packageManager": "yarn@4.5.1",
   "files": [
     "build"

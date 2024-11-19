@@ -1,4 +1,6 @@
-import { html } from 'https://cdn.jsdelivr.net/gh/lit/dist@3/core/lit-core.min.js';
+import { html } from 'lit';
+
+import './button.css';
 
 export const Button = ({ outlined, large, label, onClick, icon }) => {
     const iconHTML = html`<i class="fa-solid ${icon}"></i>`;

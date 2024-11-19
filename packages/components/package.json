@@ -1,8 +1,16 @@
 {
-  "name": "@mega-ds/components",
+  "name": "@ds/components",
   "packageManager": "yarn@4.5.1",
+  "type": "module",
+  "files": [
+    "build"
+  ],
+  "dependencies": {
+    "@ds/design-tokens": "workspace:^"
+  },
   "devDependencies": {
     "@chromatic-com/storybook": "^3.2.2",
+    "@rollup/plugin-node-resolve": "^15.3.0",
     "@storybook/addon-essentials": "^8.4.4",
     "@storybook/blocks": "^8.4.4",
     "@storybook/test": "^8.4.4",
@@ -11,11 +19,14 @@
     "lit": "^3.2.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "rollup": "^4.27.3",
+    "rollup-plugin-import-css": "^3.5.6",
     "storybook": "^8.4.4",
     "vite": "^5.4.11"
   },
   "scripts": {
     "start": "storybook dev -p 6006",
+    "build": "rollup -c",
     "build-storybook": "storybook build"
   }
 }
