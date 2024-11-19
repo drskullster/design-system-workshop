@@ -1,5 +1,8 @@
 /** @type { import('@storybook/web-components').Preview } */
 
+import '@mega-ds/design-tokens/build/tokens.css';
+import '../src/button.css';
+
 const preview = {
   parameters: {
     controls: {

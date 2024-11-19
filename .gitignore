@@ -3,3 +3,10 @@ build
 node_modules
 presentation/index.html
 *storybook.log
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
